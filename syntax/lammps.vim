@@ -18,6 +18,7 @@ syn keyword	lammpsSetup	balance box clear comm_modify comm_style newton package 
 syn keyword	lammpsRun	minimize run rerun tad neb prd quit server temper temper/grem temper/npt
 syn keyword	lammpsRun	min/spin message hyper dynamical_matrix
 syn keyword	lammpsDefine	variable group compute python set uncompute kim_query
+syn keyword lammpsData atoms bonds angles dihedrals xlo xhi ylo yhi zlo zhi Masses "\<Bond Coeffs\>" "\<Angle Coeffs\>" "\<Dihedral Coeffs\>" Atoms
 
 syn keyword	lammpsRepeat	jump next loop
 
@@ -42,23 +43,24 @@ syn match	lammpsVariable	"\$[A-Za-z]"
 
 if !exists("did_lammps_syntax_inits")
   let did_lammps_syntax_inits = 1
-  hi link lammpsOutput		Function
-  hi link lammpsRepeat		Repeat
-  hi link lammpsRead		Include
-  hi link lammpsLattice		Typedef
-  hi link lammpsParticle	Typedef
-  hi link lammpsSetup		Typedef
-  hi link lammpsDefine		Define
-  hi link lammpsRun		Statement
-  hi link lammpsNumber		Number
-  hi link lammpsFloat		Float
-  hi link lammpsString		String
-  hi link lammpsComment		Comment
-  hi link lammpsLoop		Repeat
-  hi link lammpsVariable	Identifier
+  hi link lammpsOutput		  Function
+  hi link lammpsRepeat		  Repeat
+  hi link lammpsRead		    Include
+  hi link lammpsLattice		  Typedef
+  hi link lammpsParticle	  Typedef
+  hi link lammpsSetup		    Typedef
+  hi link lammpsDefine		  Define
+  hi link lammpsRun		      Statement
+  hi link lammpsNumber		  Number
+  hi link lammpsFloat		    Float
+  hi link lammpsString		  String
+  hi link lammpsComment		  Comment
+  hi link lammpsLoop		    Repeat
+  hi link lammpsVariable	  Identifier
   hi link lammpsConditional	Conditional
-  hi link lammpsOperator	Operator
-  hi link lammpsSpecial		Number
+  hi link lammpsOperator	  Operator
+  hi link lammpsSpecial		  Number
+  hi link lammpsData        TypeDef
 endif
 
 let b:current_syntax = "lammps"
