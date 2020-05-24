@@ -43,24 +43,24 @@ syn match	lammpsVariable	"\$[A-Za-z]"
 
 if !exists("did_lammps_syntax_inits")
   let did_lammps_syntax_inits = 1
-  hi link lammpsOutput		  Function
-  hi link lammpsRepeat		  Repeat
-  hi link lammpsRead		    Include
-  hi link lammpsLattice		  Typedef
-  hi link lammpsParticle	  Typedef
-  hi link lammpsSetup		    Typedef
-  hi link lammpsDefine		  Define
-  hi link lammpsRun		      Statement
-  hi link lammpsNumber		  Number
-  hi link lammpsFloat		    Float
-  hi link lammpsString		  String
-  hi link lammpsComment		  Comment
-  hi link lammpsLoop		    Repeat
-  hi link lammpsVariable	  Identifier
-  hi link lammpsConditional	Conditional
-  hi link lammpsOperator	  Operator
-  hi link lammpsSpecial		  Number
-  hi link lammpsData        TypeDef
+  hi link lammpsOutput  Function
+  hi link lammpsRepeat	Repeat
+  hi link lammpsRead		Include
+  hi link lammpsLattice Typedef
+  hi link lammpsParticle  Typedef
+  hi link lammpsSetup Typedef
+  hi link lammpsDefine  Define
+  hi link lammpsRun Statement
+  hi link lammpsNumber  Number
+  hi link lammpsFloat Float
+  hi link lammpsString  String
+  hi link lammpsComment Comment
+  hi link lammpsLoop  Repeat
+  hi link lammpsVariable  Identifier
+  hi link lammpsConditional Conditional
+  hi link lammpsOperator  Operator
+  hi link lammpsSpecial Number
+  hi link lammpsData  TypeDef
 endif
 
 let b:current_syntax = "lammps"
