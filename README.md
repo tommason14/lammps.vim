@@ -10,3 +10,8 @@ Plugin 'tommason14/lammps.vim'
 ```
 
 Then run `:PluginInstall` and `:so $MYVIMRC` to install and activate the plugin.
+
+If you use the [tcomment](https://github.com/tomtom/tcomment_vim) package, also add the following line to your `~/.vimrc`:
+```vim
+let g:tcomment_types={'lammps': '# %s'}
+```
