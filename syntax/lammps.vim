@@ -45,7 +45,7 @@ if !exists("did_lammps_syntax_inits")
   let did_lammps_syntax_inits = 1
   hi link lammpsOutput  Function
   hi link lammpsRepeat	Repeat
-  hi link lammpsRead		Include
+  hi link lammpsRead  Include
   hi link lammpsLattice Typedef
   hi link lammpsParticle  Typedef
   hi link lammpsSetup Typedef
